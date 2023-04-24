@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a,
+button,
+input,
+textarea{
+    outline: none;
+}
+html,
+body {
+    font-family: 'Jost', sans-serif;
+}
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* Header  */
+#header {
+
+    display: grid;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    height: 90px;
+}
+header.navbar-fixed {
+    border-bottom: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 80px;
+}
+
+/* Container Page*/
+.container {
+    width: 100%;
+    padding: 0 15px 0 15px;
+    margin: 0 auto 0 auto;
+}
+
+@media (min-width: 5147px) {
+    .container {
+        width: 100%;
+        padding: 0 30px 0 30px;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (min-width: 1478px) {
+    .container {
+        width: 100%;
+        padding: 0 25px 0 25px;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* https://css.gg/sun  */
+.gg-sun {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 24px;
+    height: 24px;
+    background:
+        linear-gradient(to bottom,
+            currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px,
+        linear-gradient(to bottom,
+            currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px,
+        linear-gradient(to bottom,
+            currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px,
+        linear-gradient(to bottom,
+            currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent
+}
+.gg-sun::after,
+.gg-sun::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px
+}
+
+.gg-sun::before {
+    transform: rotate(-45deg)
+}
+
+.gg-sun::after {
+    transform: rotate(45deg)
+}
+/* https://css.gg/moon  */
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent
+}
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
+}
+/* Navbar  */
+#header nav .navbar-brand {
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #189A46;
+}
+.header__darklight{
+    height: 24px;
+    width: 24px;
+    padding: 3px 0;
+    margin-left: 20px;
+}
+.header__darklight .gg-sun,
+.header__darklight input[type=checkbox]{
+    display: none;
+}
+.header__darklight input[type=checkbox]:checked + div>.gg-sun{
+    display: inherit;
+}
+.header__darklight input[type=checkbox]:checked + div>.gg-moon{
+    display: none;
+}
+#header .modal-body{
+    padding: 0;
+}
+#header .modal button.close{
+    position: absolute;
+    right: 20px;
+    top: -50px;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 30px;
+}
+.modal-content{
+    background: transparent;
+    border: none;
+}
+.header__searchbox{
+    position: relative;
+    padding: 15px;
+    max-width: 600px;
+}
+#header .header__searchbox form input[type=search]{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    height: 55px;
+    padding: 15px 20px 12px;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px 3px 3px 6px;
+    border: 1.6px solid #ccc;
+    border-right: none;
+    margin: 0!important;
+    flex: 1 1 auto;
+}
+.header__searchbox form button{
+    height: 55px;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #F5F9FC;
+    font-weight: 500;
+    border: none;
+    background: #189A46;
+    padding: 0 25px;
+    border-radius: 0 6px 6px 0;
+}
+#header .navbar-nav .nav-item{
+    padding: 0 12px;
+}
+#header .navbar-nav .nav-link{
+    text-transform: capitalize;
+    padding: 14px 0;
+    font-size: 1.2em;
+    font-family: 400;
+    color: #000;
+    position: relative;
+    transition: all 0.5s ease;
+}
+#header .header__search > a{
+    font-size: 16px;
+    background: rgba(147, 107, 232, 0.05);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    padding: 0;
+    text-align: center;
+    color: #189A46;
+    display: inline-block;
+}
+#header .header__search > a:focus{
+    background-color:  #189A46;
+    color: #fff;
+}
+#header a.nav-link::before{
+    content: '';
+    position: absolute;
+    background-color: #189A46;
+    height: 1px;
+    bottom: 13px;
+    width: 0;
+    transition: all 0.5s;
+}
+#header a.nav-link:hover::before{
+    width: 100%;
+}
+#header .navbar-nav .nav-link:hover{
+    color: #189A46;
+}
+#header .navbar-nav .active > a{
+    color: #189A46;
+}
