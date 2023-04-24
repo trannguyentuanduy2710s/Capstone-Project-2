@@ -81,13 +81,115 @@
             <h3>TESTIMONIALS</h3>
             <h1 class="mb-4 mb-md-5">Happy Clients & Feedbacks</h1>
             <div class="quote__carousel">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                
+                <div class="item">
+                    <div class="quote__item">
+                        <div class="quote__content">
+                            <blockquote>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius hic sit deserunt
+                                    distinctio est placeat itaque repellendus modi recusandae corrupti!</p>
+                            </blockquote>
+                            <div class="quote__author">
+                                <div class="quote__img">
+                                    <img src="./images/f1.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="quote__name">
+                                    <h4>John Wilson</h4>
+                                    <p>Example City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote__item">
+                        <div class="quote__content">
+                            <blockquote>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius hic sit deserunt
+                                    distinctio est placeat itaque repellendus modi recusandae corrupti!</p>
+                            </blockquote>
+                            <div class="quote__author">
+                                <div class="quote__img">
+                                    <img src="./images/f2.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="quote__name">
+                                    <h4>Julia Sakura</h4>
+                                    <p>Example City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote__item">
+                        <div class="quote__content">
+                            <blockquote>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius hic sit deserunt
+                                    distinctio est placeat itaque repellendus modi recusandae corrupti!</p>
+                            </blockquote>
+                            <div class="quote__author">
+                                <div class="quote__img">
+                                    <img src="./images/f3.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="quote__name">
+                                    <h4>Roy Linderson</h4>
+                                    <p>Example City</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote__content">
+                        <blockquote>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius hic sit deserunt
+                                distinctio est placeat itaque repellendus modi recusandae corrupti!</p>
+                        </blockquote>
+                        <div class="quote__author">
+                            <div class="quote__img">
+                                <img src="./images/f4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="quote__name">
+                                <h4>Mike Thyson</h4>
+                                <p>Example City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote__content">
+                        <blockquote>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius hic sit deserunt
+                                distinctio est placeat itaque repellendus modi recusandae corrupti!</p>
+                        </blockquote>
+                        <div class="quote__author">
+                            <div class="quote__img">
+                                <img src="./images/f2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="quote__name">
+                                <h4>Laura Gill</h4>
+                                <p>Example City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="quote__content">
+                        <blockquote>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius hic sit deserunt
+                                distinctio est placeat itaque repellendus modi recusandae corrupti!</p>
+                        </blockquote>
+                        <div class="quote__author">
+                            <div class="quote__img">
+                                <img src="./images/f3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="quote__name">
+                                <h4>Smith Johnson</h4>
+                                <p>Example City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -125,7 +227,27 @@
     </script>
     <script>
         $(document).ready(function () {
-            $(".quote__carousel").owlCarousel();
+            $(".quote__carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            });
         });
     </script>
 </body>

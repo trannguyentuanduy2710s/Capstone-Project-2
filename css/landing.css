@@ -148,3 +148,33 @@ h3{
     flex-direction: column;
     text-align: center;
 }
+
+.quote__content{
+    padding:40px 30px;
+    text-align: left;
+}
+
+.quote__author{
+    display: flex;
+    
+
+}
+.quote__img{
+    width: 70px;
+    height: 70px;
+}
+.quote__img img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.quote__name{
+    margin-left: 10px;
+    line-height: 1.2;
+}
+.quote__name h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.quote__name{
+
+}
