@@ -21,14 +21,22 @@ body {
 }
 /* Header  */
 #header {
-
+    position:fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
     display: grid;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
     height: 90px;
+    width: 100%;
+    transition: all 0.4s ease 0s;
 }
-header.navbar-fixed {
+#header + section{
+    margin-top: 90px;
+}
+#header.header__fixed {
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
     height: 80px;

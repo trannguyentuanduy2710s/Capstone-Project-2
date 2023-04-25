@@ -173,15 +173,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="owl-nav">
-        <div class="owl-prev">prev</div>
-        <div class="owl-next">next</div>
-      </div>
-      <div class="owl-dots">
-        <div class="owl-dot active"><span></span></div>
-        <div class="owl-dot"><span></span></div>
-        <div class="owl-dot"><span></span></div>
-      </div> -->
     </div>
   </section>
   <!-- Optional JavaScript -->
@@ -224,6 +215,14 @@
           }
         }
       });
+    });
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+      if (scroll >= 80) {
+        $("#header").addClass("header__fixed");
+      } else {
+        $("#header").removeClass("header__fixed");
+      }
     });
   </script>
 </body>
