@@ -148,10 +148,21 @@ h3{
     flex-direction: column;
     text-align: center;
 }
+.quote__carousel{
+    max-width: 1050px;
+    margin: auto;
+}
+.owl__item{
+    width: 515px!important;
+}
+
 
 .quote__content{
     padding:40px 30px;
     text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+
 }
 
 .quote__author{
@@ -175,6 +186,35 @@ h3{
     font-size: 20px;
     font-weight: 600;
 }
-.quote__name{
 
+.quote__content blockquote{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 24px 24px;
+}
+.quote__content blockquote q{
+    font-size: 1.2em;
+    line-height: 28px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.quote__content blockquote q::before{
+    content: open-quote;
+    font-size: 50px;
+    color: #189a46;
+    line-height: .8;
+    padding-top: 8px;
+    font-weight: 600;
+    display: inline-block;
+    font-family: "Merriweather", serif;
+}
+.owl-dots{
+    margin-top: 80px!important;
+}
+
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span,.owl-carousel.owl-theme .owl-dots .owl-dot:hover span{
+    background: #189a46!important;
+    width: 30px!important;
+    height: 10px!important;
 }
