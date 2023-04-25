@@ -13,6 +13,7 @@ textarea{
 html,
 body {
     font-family: 'Jost', sans-serif;
+    font-size: 16px;
 }
 body {
     font-size: 1rem;
@@ -331,3 +332,127 @@ header.navbar-fixed {
 #header .navbar-nav .active > a{
     color: #189A46;
 }
+/* Style button */
+.btn-primary{
+    padding: 12px 35px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    color: #189A46;
+    transition: 0.3s ease-in;
+}
+.btn-primary:hover{
+    outline: none;
+    box-shadow: none;
+    color: #189A46;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-primary:active{
+    outline: none;
+    box-shadow: none;
+    color: #189A46 !important;
+    background-color: #fff !important;
+    border-color: #fff;
+}
+.btn-outline-primary{
+    padding: 10px 35px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+.btn-outline-primary:hover{
+    outline: none;
+    color: #189A46;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-outline-primary:active{
+    outline: none;
+    box-shadow: none;
+    color: #189A46 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.btn-outline-primary:focus{
+    outline: none;
+    box-shadow: none;
+}
+ /* <== Style button */
+
+/* Modify Owl carousel  */
+.owl-dots{
+    margin-top: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.owl-dots .active span,
+.owl-dots .owl-dot:hover span{
+    background-color: #189A46 !important;
+    width: 30px !important;
+}
+/* <== Modify Owl carousel  */
+
+/* Carousel  */
+/* Carousel Background  */
+.carousel .owl-item{
+    position: relative;
+}
+.carousel .container{
+    min-height: 100vh;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: grid;
+    align-items: center;
+}
+.carousel .carousel__bg{
+    position: absolute;
+    z-index: -1;
+}
+.carousel .carousel__bg::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+.carousel .carousel__bg img{
+    object-fit: cover;
+}
+/* <== Carousel Background  */
+
+/* Carousel Detail  */
+.carousel .carousel__detail {
+    max-width: 700px;
+    color: #fff;
+    font-size: 1rem;
+}
+.carousel .carousel__detail h1{
+    font-size: 66px;
+    line-height: 76px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.carousel .carousel__detail p{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    opacity: 0.9;
+}
+/* <== Carousel Detail */
