@@ -78,6 +78,49 @@ p{
 }
  
 
+/* BREADCRUMB  */
+.breadcrumb{
+    background-image: url(../images/banner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    align-items: center;
+    padding: 1em 0;
+    text-align: center;
+}
+.breadcrumb::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+.breadcrumb__content h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.breadcrumb__item{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.breadcrumb__item a{
+    color: #189A46;
+}
+
 
 
 /* WHY CHOOSE US  */
