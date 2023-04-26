@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Pooch Care</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <a href="#">Blog Posts</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <a href="#">Landing page</a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-lg-0 mt-2">
+                        <li class="nav-item header__search">
+                            <!-- Button trigger modal -->
+                            <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                <span class="fa fa-search"></span>
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="header__searchbox">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <form class="form-inline my-2 my-lg-0">
+                                                    <input class="form-control mr-sm-2" type="search"
+                                                        placeholder="Search.." aria-label="Search">
+                                                    <button class="btn btn-outline-success my-2 my-sm-0"
+                                                        type="submit">Search</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__darklight">
+                    <label for="chxdarklight">
+                        <input type="checkbox" id="chxdarklight">
+                        <div>
+                            <i class="gg-sun"></i>
+                            <i class="gg-moon"></i>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="blog pt-5">
+        <div class="container py-lg-5">
+            <div class="blog__header text-center">
+                <ul class="blog__tag">
+                    <li><a href="#" class="btn btn-success">Uncategorized</a></li>
+                    <li><a href="#" class="btn btn-success">Uncategorized</a></li>
+                </ul>
+                <h2 class="mt-3">Hello World!</h2>
+                <ul class="blog__detail">
+                    <li>
+                        <i class="fa fa-clock"></i>
+                        <span>December 25, 2020</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <span> by <a class="url" href="#">W3Layouts</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog__image mb-4">
+                <img src="./images/banner2.jpg" alt="">
+            </div>
+            <div class="blog__content my-5">
+                <div class="blog__text">
+                    <p>Welcome to <a href="#">RoverThemes Demo Sites</a>. This is your first post. Edit or delete it,
+                        then start writing!</p>
+                </div>
+                <div class="blog__nav d-flex">
+                    <div class="blog__prev">
+                        <a href="" class="text-left">
+                            <span><i class="fa fa-angle-double-left prev-left"></i> Prev Post</span>
+                            <span>Hello world!</span>
+                        </a>
+                    </div>
+                    <div class="blog__next">
+                        <a href="" class="text-right">
+                            <span>Next Post <i class="fa fa-angle-double-right"></i></span>
+                            <span>Delivering happiness for Pets</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog__comments my-5">
+                    <h2>One thought on “Hello world!”</h2>
+                    <div class="blog__reply">
+                        <h2>Leave a Reply</h2>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="tbcomment">Comment *</label>
+                                <textarea class="form-control" id="tbcomment" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="tbname">Name *</label>
+                                <input type="text" class="form-control" id="tbname">
+                            </div>
+                            <div class="form-group">
+                                <label for="tbemail">Email *</label>
+                                <input type="email" class="form-control" id="tbemail"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="tbwebsite">Website</label>
+                                <input type="text" class="form-control" id="tbwebsite">
+                            </div>
+                            <label for="">Save my name, email, and website in this browser for the next time I comment.</label>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-success">Post Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container py-lg-3">
+            <div class="row">
+                <div class="footer__left col-lg-6 col-md-5 mt-5">
+                    <h6 class="footer__title">Contact information</h6>
+                    <ul>
+                        <li><strong>Address</strong> : #135 block, Barnard St. Brooklyn, London 10036, UK</li>
+                        <li><strong>Phone</strong> : <a href="tel:++(12)234-11-24">+(12)234-11-24</a></li>
+                        <li><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></li>
+                    </ul>
+                    <div class="footer__icons mt-3">
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Dribble"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#" title="Google"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right col-lg-6 col-md-7">
+                    <div class="row">
+                        <div class="col-sm-4 col-6 mt-5">
+                            <h6 class="footer__title">Archives</h6>
+                            <ul>
+                                <li><a href="#">December 2020</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-6 mt-5">
+                            <h6 class="footer__title">Categories</h6>
+                            <ul>
+                                <li><a href="#">Animals</a></li>
+                                <li><a href="#">Pets</a></li>
+                                <li><a href="#">Pets care</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 mt-5">
+                            <h6 class="footer__title">Meta</h6>
+                            <ul>
+                                <li><a href="#">Log in</a></li>
+                                <li><a href="#">Entries feed</a></li>
+                                <li><a href="#">Comments feed</a></li>
+                                <li><a href="#">WordPress.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center py-lg-4 py-3 mt-5">
+            <div class="container">
+                <p>© 2023 All Rights Reserved by <a href="#">W3Layouts.</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./JS/backtotop/util.js"></script>
+    <script>
+        // Fix Navigation On Top 
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 80) {
+                $("#header").addClass("header__fixed");
+            } else {
+                $("#header").removeClass("header__fixed");
+            }
+        });
+        // <== Fix Navigation On Top 
+        // Back To Top
+        (function () {
+            // Back to Top - by CodyHouse.co
+            var backTop = document.getElementsByClassName('js-cd-top')[0],
+                offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
+                offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                scrollDuration = 700,
+                scrolling = false;
+
+            if (backTop) {
+                //update back to top visibility on scrolling
+                window.addEventListener("scroll", function (event) {
+                    if (!scrolling) {
+                        scrolling = true;
+                        (!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+                    }
+                });
+
+                //smooth scroll to top
+                backTop.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    (!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
+                });
+            }
+
+            function checkBackToTop() {
+                var windowTop = window.scrollY || document.documentElement.scrollTop;
+                (windowTop > offset) ? Util.addClass(backTop, 'cd-top--is-visible') : Util.removeClass(backTop, 'cd-top--is-visible cd-top--fade-out');
+                (windowTop > offsetOpacity) && Util.addClass(backTop, 'cd-top--fade-out');
+                scrolling = false;
+            }
+        })();
+    // <== Back To Top
+    </script>
+</body>
+
+</html>
