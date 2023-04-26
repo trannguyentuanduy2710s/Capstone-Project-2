@@ -275,7 +275,7 @@ p{
 #video__popup iframe{
     width: 100%;
     height: 400px;
-    bo
+
 }
 
 .mfp-bg{
@@ -359,4 +359,10 @@ p{
 .sud__form .btn:hover{
     background-color: #116E32;
     border: 1px solid #116E32;
+}
+
+/* MAP  */
+.map iframe{
+    width: 100%;
+    height: 400px;
 }
