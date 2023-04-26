@@ -527,6 +527,15 @@ p {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+
+.contact__form input:focus{
+    border: 1px solid #189a46;
+    background-color: #fff;
+}
+.contact__form textarea:focus{
+    border: 1px solid #189a46;
+    background-color: #fff;
+}
 .form__left .form__button {
     padding: 12px 35px;
     font-size: 18px;
