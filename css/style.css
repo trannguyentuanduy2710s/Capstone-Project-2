@@ -73,7 +73,8 @@ body {
 #header.header__fixed {
     border-bottom: none;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-    height: 80px;
+    height: auto;
+    background-color: #fff;
 }
 
 /* Container Page*/
@@ -1038,6 +1039,9 @@ body {
     #header{
         height: 90px;
         padding: 0;
+    }
+    #header.header__fixed{
+        height: 80px;
     }
     .header__darklight {
         position: inherit;
