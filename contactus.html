@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <!-- bootstrap  4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- owl carousel  -->
+    <link rel="stylesheet" href="./JS/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./JS/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <!-- magnific popup  -->
+    <link rel="stylesheet" href="./JS/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css">
+
+
+
+
+
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/landing.css">
+</head>
+
+
+
+<body>
+    <!-- breadcrumb  -->
+    <section class="breadcrumb">
+        <div class="breadcrumb__content py-sm-5 py-4 mx-auto">
+            <div class="container py-2">
+                <h1>Contact Us</h1>
+                <ul class="breadcrumb__item mt-2">
+                    <a href="#" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Contact page
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact pt-5">
+        <div class="contact__content pt-lg-4">
+            <h3>FIND US</h3>
+            <h1 class="mb-5">Get In Touch With Us</h1>
+            <div class="container pb-lg-4">
+                <div class="contact__form">
+                    <div class="form__left mt-lg-0 mt-md-4 mt-2">
+                        <div class="form__row1">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form__row2">
+                            <input type="text" name="subject" id="subject" placeholder="Subject*" required>
+                        </div>
+                        <div class="form__row3">
+                           <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="form__button mt-4">Send Message</button>
+                    </div>
+                    <div class="form__right mt-lg-0 mt-4">
+                        <div class="us__info">
+                            <div class="us__info__icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="us__info__descr">
+                                <h5>Address</h5>
+                                <p>#135 block, Barnard St. Brooklyn, London 10036, UK</p>
+                            </div>
+
+                        </div>
+                        <div class="us__info info2">
+                            <div class="us__info__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="us__info__descr">
+                                <h5>Telephone</h5>
+                                <a href="tel:+(12)234-11-24">+(12)234-11-24
+                                </a>
+                                <br>
+                                <a href="tel:+(12)234-11-25">+(12)234-11-25
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <div class="us__info info2">
+                            <div class="us__info__icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="us__info__descr">
+                                <h5>Email Us</h5>
+                                <a href="mailto:example@email.com">example@email.com
+                                </a>
+                                <br>
+                                <a href="mailto:example@email.com">example@email1.com
+                                </a>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script source  -->
+    <!-- jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- waypoints  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- bootstrap bundle  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- counting up  -->
+    <script src="./JS/counting up/jquery.countup.js"></script>
+    <!-- owls carousel js  -->
+    <script src="./JS/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- magnific popup video JS  -->
+    <script src="./JS/Magnific-Popup-master/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+
+
+
+
+    <!-- script function  -->
+    <script>
+        $('.counter').countUp({
+            'time': 2000,
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".quote__carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                items: 2,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- popup video  -->
+    <script>
+        $(document).ready(function () {
+            $('.popup__video').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            }
+
+            );
+        });
+    </script>
+</body>
+
+</html>
