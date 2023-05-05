@@ -319,19 +319,6 @@ p {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .quote__carousel {
     max-width: 1050px;
     margin: auto;
@@ -634,8 +621,6 @@ p {
 #video__popup iframe {
     width: 100%;
     height: 400px;
-
-
 }
 
 .mfp-bg {
@@ -904,3 +889,5 @@ p {
         flex-direction: column;
     }
 }
+
+
