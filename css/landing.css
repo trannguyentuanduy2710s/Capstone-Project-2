@@ -675,7 +675,6 @@ p {
 
 /* STAY UP DATED  */
 .sud__maxwidth {
-    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -722,6 +721,7 @@ p {
     font-weight: 400;
     border-radius: 10px;
     color: #fff;
+    text-align: center;
     background-color: #189A46;
     border-color: #189A46;
     transition: 0.3s ease-in;
@@ -731,6 +731,22 @@ p {
     background-color: #116E32;
     border: 1px solid #116E32;
 }
+@media all and (max-width:667px) {
+    .sud__form {
+        flex-direction: column;
+    }
+    .sud__form .btn {
+      width: 100%;
+      margin-top: 16px;
+    }
+    .sud__form input{
+        width: 100%;
+    }
+  }
+
+
+
+
 
 /* MAP  */
 .map{
