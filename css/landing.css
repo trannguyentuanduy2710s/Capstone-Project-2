@@ -897,3 +897,10 @@ p {
     text-decoration: underline;
 }
 
+
+@media all and (max-width:992px){
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+    }
+}
