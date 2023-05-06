@@ -36,16 +36,37 @@
 </head>
 
 <body>
+    <!-- Modal Search Box -->
+    <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search.."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">Pooch Care</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenuTop"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times"></i>
+                    </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navMenuTop">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
@@ -81,31 +102,9 @@
                     <ul class="navbar-nav mt-lg-0 mt-2">
                         <li class="nav-item header__search">
                             <!-- Button trigger modal -->
-                            <a href="#" data-toggle="modal" data-target="#exampleModal">
+                            <a href="#" data-toggle="modal" data-target="#searchBox">
                                 <span class="fa fa-search"></span>
                             </a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <div class="header__searchbox">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <form class="form-inline my-2 my-lg-0">
-                                                    <input class="form-control mr-sm-2" type="search"
-                                                        placeholder="Search.." aria-label="Search">
-                                                    <button class="btn btn-outline-success my-2 my-sm-0"
-                                                        type="submit">Search</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </li>
                     </ul>
                 </div>
@@ -121,11 +120,11 @@
             </nav>
         </div>
     </header>
+    <!-- <== Kết thúc Header  -->
     <section class="blog pt-5">
         <div class="container py-lg-5">
             <div class="blog__header text-center">
                 <ul class="blog__tag">
-                    <li><a href="#" class="btn btn-success">Uncategorized</a></li>
                     <li><a href="#" class="btn btn-success">Uncategorized</a></li>
                 </ul>
                 <h2 class="mt-3">Hello World!</h2>
