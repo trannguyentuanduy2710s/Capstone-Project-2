@@ -22,6 +22,7 @@ a.url {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    transition: 0.5s all;
 }
 
 p {
@@ -481,7 +482,7 @@ img {
 
 /* <== Style button */
 
-/* BREADCRUMB  */
+/* Phần Page Path  */
 .pagepath {
     position: relative;
     z-index: 0;
@@ -500,7 +501,6 @@ img {
     height: 100%;
     width: 100%;
     z-index: -1;
-    border-radius: 0;
 }
 
 .pagepath__content{
@@ -560,251 +560,105 @@ img {
     color: #fff;
     margin-bottom: 0;
 }
+/* <== Kết thúc Page Path  */
 
-/* *****************
-** BLOG SINGLE    **
-********************/
-.blog {
-    margin-bottom: 1.5em;
+/* Style Title */
+.title {
+    font-size: 1rem;
 }
-
-.blog__tag {
-    margin: 0;
+.title h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
 }
-
-.blog li {
-    display: inline-block;
-}
-
-.blog__tag a {
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 6px;
-    padding: 4px 10px;
-    margin: 5px 0;
-}
-
-.blog__header h2 {
+.title h2 {
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
     text-transform: capitalize;
-    margin-bottom: 0;
 }
+/* <== Kết thúc Style Title  */
 
-.blog__author {
-    margin: 10px 0 20px 0;
-    padding-bottom: 10px;
+/* Phần Post  */
+.posts{
+    background: rgba(147,107,232,0.05);
+    font-size: 1rem;
 }
-
-.blog__author li>*:not(i, a) {
-    margin-right: 20px;
-    font-size: 16px;
-    color: #696969;
+.posts__item{
+    margin-bottom: 1.5em;
 }
-
-.blog__author li i{
-    font-size: 14px;
+.posts__card{
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
 }
-
-.blog__image {
-    max-width: 1100px;
-    margin: 0 auto;
+.posts__card:hover{
+    transform: translateY(-0.5rem);
 }
-
-.blog__content {
-    max-width: 900px;
-    margin: 0 auto;
+.posts__card:hover .posts__carddetail{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
 }
-
-.blog__text p {
-    margin: 15px 0;
-    font-size: 1.2em;
-    line-height: 28px;
-    color: #696969;
+.posts__cardimg a{
+    display: flex;
 }
-
-.blog__nav {
-    padding: 25px 0;
-    margin: 40px 0;
-    border: 1px solid rgba(147, 107, 232, 0.05);
-    border-width: 1px 0 1px;
+.posts__cardimg a img{
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    object-position: center;
 }
-
-.blog__nav .blog__prev,
-.blog__nav .blog__next {
-    flex: 1 0 50%;
+.posts__carddetail{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(19, 19, 19, 0.03);
 }
-
-.blog__nav .blog__next {
-    text-align: end;
-}
-
-.blog__prev a span,
-.blog__next a span {
-    display: block;
-}
-
-.blog__prev a span:nth-child(even),
-.blog__next a span:nth-child(even) {
-    font-size: 20px;
+.posts__carddetail a:not(.posts__author a){
+    font-size: 26px;
     font-weight: 600;
-    line-height: 30px;
-    cursor: pointer;
+    line-height: 34px;
     color: #000c04;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: .3s ease;
 }
-
-.blog__prev a span:nth-child(even):hover,
-.blog__next a span:nth-child(even):hover {
+.posts__carddetail a:not(.posts__author a):hover{
     color: #189A46;
 }
-
-.blog__prev a span:nth-child(odd),
-.blog__next a span:nth-child(odd) {
-    font-size: 16px;
+.posts__author{
     color: #999;
 }
-
-.blog__comments h2 {
-    font-weight: 600;
+.posts__author .url:hover{
+    color: #f53626;
 }
+/* Kết thúc Post  */
 
-.blog__reply h2 {
-    font-size: 28px;
-    line-height: 40px;
+/* Phần Pagination  */
+.posts ul.pagination {
+    margin: 0;
+}
+.posts .page-link{
+    border: none;
+    background: transparent;
+    font-size: 20px;
     font-weight: 600;
     color: #000c04;
-    margin: 0;
+    text-align: center;
+    padding: 0 5px;
 }
-
-.blog__list {
-    margin-top: 20px;
-}
-
-.blog__item {
-    margin: 5px 0;
-    padding: 30px 20px 10px;
-    position: relative;
-}
-
-.blog__item .row {
-    margin: 0;
-}
-
-.blog__avatar {
-    margin-right: 10px;
-}
-
-.blog__avatar img {
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-.blog__meta a {
-    display: block;
-}
-
-.blog__meta a:nth-of-type(1) {
-    line-height: 25px;
-    color: #000c04;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.blog__meta a:nth-of-type(2) {
-    font-size: 15px;
-    margin: 5px 0 8px;
-    color: #ababab;
-}
-
-.blog__detail {
-    padding: 0 40px 15px;
-    margin: 5px 0 0;
-    font-size: 16px;
-}
-
-.blog__detail p {
-    color: #696969;
-    margin: 0;
-    font-size: 1.2em;
-    line-height: 28px;
-
-}
-
-.blog__control {
-    position: absolute;
-    padding: 5px 10px;
-    left: 330px;
-    top: 52px;
-}
-
-.blog__control a {
-    line-height: 25px;
-    font-size: 14px;
-    font-weight: 600;
+.posts .page-item.active .page-link,
+.posts .page-item a:hover{
+    background: transparent;
     color: #189A46;
 }
-
-.blog__reply {
-    margin-top: 35px;
-}
-
-.blog__reply p {
-    margin-bottom: 15px;
-}
-
-.blog__reply form label {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000c04;
-    line-height: 28px;
-}
-
-.blog__reply .form-group {
-    margin: 0;
-}
-
-.blog__reply form textarea,
-.blog__reply form input {
-    margin: 5px 0 10px 0;
-    padding: 13px 20px;
-    width: 100%;
-    min-height: 60px;
-    outline: none;
-    border-radius: 6px;
-    border: 1px solid rgba(147, 107, 232, 0.05);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #000c04;
-    background-color: rgba(147, 107, 232, 0.05);
-}
-
-.blog__reply form textarea:focus,
-.blog__reply form input:focus {
-    box-shadow: none;
-    border-color: #189A46;
-    background-color: rgba(147, 107, 232, 0.05);
-}
-
-.blog__reply form textarea {
-    margin-bottom: 20px;
-    height: 150px;
-}
-
-.blog__reply .btn-success {
-    padding: 12px 35px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    text-transform: capitalize;
-    border-radius: 10px;
-}
-
-.blog__reply .form-group{
-    line-height: 28px;
-}
+/* <== Kết thúc Pagination  */
 
 /* Phần Footer  */
 .footer {
