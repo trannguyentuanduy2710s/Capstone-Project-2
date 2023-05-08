@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Gallery page - PoochCare</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,55 +23,171 @@
         rel="stylesheet">
 
     <!-- LIGHTBOX -->
-    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <link href="./JS/lightbox2-2.8.2/dist/css/lightbox.css" rel="stylesheet" />
+
+
+
 
     <!-- My CSS  -->
     <link rel="stylesheet" href="./css/gallery.css">
 </head>
 
 <body>
+    <!-- Modal Search Box -->
+    <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search.."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Pooch Care</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenuTop"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenuTop">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <a href="#">Blog Posts</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <a href="#">Landing page</a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-lg-0 mt-2">
+                        <li class="nav-item header__search">
+                            <!-- Button trigger modal -->
+                            <a href="#" data-toggle="modal" data-target="#searchBox">
+                                <span class="fa fa-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__darklight">
+                    <label for="chxdarklight">
+                        <input type="checkbox" id="chxdarklight">
+                        <div>
+                            <i class="gg-sun"></i>
+                            <i class="gg-moon"></i>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- <== Kết thúc Header  -->
+
+
+    <!-- breadcrumb  -->
+    <section class="breadcrumb">
+        <div class="breadcrumb__content py-sm-5 py-4 mx-auto">
+            <div class="container py-2">
+                <h1>Gallery</h1>
+                <ul class="breadcrumb__item mt-2">
+                    <a href="#" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Gallery page
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
     <!-- GALLERY -->
     <section class="gallery-8 py-5">
         <div class="gallery__content py-md-4 py-3">
             <div class="gallery container">
                 <div class="gallery__top text-center mx-autp">
-                    <h6 class="sub-title">VIEW GALLERY</h6>
-                    <h3 class="h-title">Latest Gallery</h3>
+                    <h3 class="sub-title">VIEW GALLERY</h3>
+                    <h1 class="h-title">Latest Gallery</h1>
                 </div>
                 <div class="gallery__bot row mt-lg-5 mt-4">
                     <div class="col-md-4 hover14">
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images04.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <figure>
                                 <img src="./images/images04.jpg" alt="" class="img-fluid">
                             </figure>
-                            
+
                         </a>
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images05.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images05.jpg" alt="" class="img-fluid">
                         </a>
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images10.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images10.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images06.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images06.jpg" alt="" class="img-fluid">
                         </a>
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images07.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images07.jpg" alt="" class="img-fluid">
                         </a>
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images11.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images11.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images08.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images08.jpg" alt="" class="img-fluid">
                         </a>
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images09.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images09.jpg" alt="" class="img-fluid">
                         </a>
-                        <a href="" data-lightbox="example-set" class="mb-4" data-title="lorem ipsum dolor sit amet">
+                        <a href="./images/images12.jpg" data-lightbox="poochcare__gallery" class="mb-4"
+                            data-title="lorem ipsum dolor sit amet">
                             <img src="./images/images12.jpg" alt="" class="img-fluid">
                         </a>
                     </div>
@@ -79,6 +195,71 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <!-- Phần Footer  -->
+    <footer class="footer">
+        <div class="container py-lg-3">
+            <div class="row">
+                <div class="footer__left col-lg-6 col-md-5 mt-5">
+                    <h6 class="footer__title">Contact information</h6>
+                    <ul>
+                        <li><strong>Address</strong> : #135 block, Barnard St. Brooklyn, London 10036, UK</li>
+                        <li><strong>Phone</strong> : <a href="tel:++(12)234-11-24">+(12)234-11-24</a></li>
+                        <li><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></li>
+                    </ul>
+                    <div class="footer__icons mt-3">
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Dribble"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#" title="Google"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right col-lg-6 col-md-7">
+                    <div class="row">
+                        <div class="col-sm-4 col-6 mt-5">
+                            <h6 class="footer__title">Archives</h6>
+                            <ul>
+                                <li><a href="#">December 2020</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-6 mt-5">
+                            <h6 class="footer__title">Categories</h6>
+                            <ul>
+                                <li><a href="#">Animals</a></li>
+                                <li><a href="#">Pets</a></li>
+                                <li><a href="#">Pets care</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 mt-5">
+                            <h6 class="footer__title">Meta</h6>
+                            <ul>
+                                <li><a href="#">Log in</a></li>
+                                <li><a href="#">Entries feed</a></li>
+                                <li><a href="#">Comments feed</a></li>
+                                <li><a href="#">WordPress.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center py-lg-4 py-3 mt-5">
+            <div class="container">
+                <p>© 2023 All Rights Reserved by <a href="#">W3Layouts.</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Kết thúc Phần Footer  -->
+
+
+
+
 
 
     <!-- Optional JavaScript -->
@@ -92,9 +273,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
-
     <!-- LIGHTBOX -->
-    <script src="path/to/lightbox.js"></script>
+    <script src="./JS/lightbox2-2.8.2/dist/js/lightbox-plus-jquery.js"></script>
+
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 600,
+            'wrapAround': true
+        })
+    </script>
+
+
+
 </body>
 
 </html>
