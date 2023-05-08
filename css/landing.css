@@ -76,7 +76,11 @@ h3 {
 }
 
 p {
+    font-size: 1.2em;
     margin: 0;
+    line-height: 28px;
+    color: #696969;
+
 }
 
 
@@ -626,6 +630,211 @@ p {
 
 
 
+/* Carousel của Truyền */
+/* Style button */
+.btn-primary {
+    padding: 12px 35px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    color: #189A46;
+    transition: 0.3s ease-in;
+}
+.btn-primary:hover {
+    outline: none;
+    box-shadow: none;
+    color: #189A46;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-primary:active {
+    outline: none;
+    box-shadow: none;
+    color: #189A46 !important;
+    background-color: #fff !important;
+    border-color: #fff;
+}
+.btn-outline-primary {
+    padding: 10px 35px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+.btn-outline-primary:hover {
+    outline: none;
+    color: #189A46;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-outline-primary:active {
+    outline: none;
+    box-shadow: none;
+    color: #189A46 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.btn-outline-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-success,
+.btn-success:active,
+.btn-success:hover {
+    background-color: #189A46;
+    border-color: #189A46;
+    outline: none;
+}
+
+/* <== Style button */
+
+/* Modify Owl carousel  */
+/* khang thêm selector section để ko bị đụng với owls carousel khác  */
+.slider__carousel .owl-dots {
+    margin-top: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+.slider__carousel .owl-dots .active span,
+.slider__carousel .owl-dots .owl-dot:hover span {
+    background-color: #189A46 !important;
+    width: 30px !important;
+}
+/* <== Modify Owl carousel  */
+
+/* Style Title */
+.title {
+    font-size: 1rem;
+}
+.title h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+.title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+/* <== Style Title  */
+
+/* Read more  */
+.read {
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom: 2px solid #189A46;
+    color: #000c04;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+
+.read:hover:not(.non-hover) {
+    color: #189A46;
+}
+
+/* Carousel  */
+/* Carousel Background  */
+.carousel .owl-item {
+    position: relative;
+}
+.carousel .container {
+    min-height: 440px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: grid;
+    align-items: center;
+}
+.carousel .carousel__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.carousel .carousel__bg::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0c0c0c;
+    opacity: 0.6;
+}
+.carousel .carousel__bg img {
+    object-fit: cover;
+    object-position: top left;
+    height: 100%;
+}
+/* <== Carousel Background  */
+
+/* Carousel Detail  */
+.carousel .carousel__detail {
+    max-width: 700px;
+    color: #fff;
+    font-size: 1rem;
+}
+.carousel .carousel__detail h1 {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+.carousel .carousel__detail p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    opacity: 0.9;
+    color: inherit;
+    margin: 0;
+}
+/* <== Carousel Detail */
+
+/* Responsive của carousel Truyền  */
+@media (min-width: 441px) {
+    .carousel .container {
+        min-height: 480px;
+    }
+}
+
+@media (min-width: 481px) {
+    .carousel .container {
+        min-height: 500px;
+    }
+}
+
+@media (min-width: 601px) {
+    .carousel .container {
+        min-height: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Carousel  */
+    .carousel .container {
+        min-height: calc(100vh - 90px);
+    }
+
+}
+
 
 /* BREADCRUMB  */
 .breadcrumb {
@@ -721,6 +930,171 @@ p {
         width: 100% !important;
     }
 }
+
+
+/* ABOUT US của Truyền  */
+/* About */
+.about__detail {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* <== About  */
+
+
+
+/* FEATURE của Truyền  */
+/* Features  */
+.features {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.features__item {
+    margin-bottom: 30px;
+}
+
+.features__card {
+    font-size: 1rem;
+    padding: 40px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.features__card>a{
+    transition: 0.5s;
+}
+
+.features__card:hover{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.features__card>i {
+    font-size: 30px;
+    color: #189A46;
+}
+
+.features__card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 25px 0 15px 0;
+    color: #000c04;
+}
+.features__card h3:hover a{
+    color: #189A46;
+}
+
+.features__card h3 a {
+    color: inherit;
+    transition: 0.5s;
+
+}
+
+.features__card>a:hover{
+    color: #189A46;
+}
+/* <== Features  */
+
+
+/* OUR TEAM của Duy  */
+/* OUR TEAM */
+.team__info a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.team__our{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+
+.team__item{
+    margin-bottom: 44px;
+}
+
+.team__top{
+    overflow: hidden;
+    position: relative;
+}
+
+.team__top a{
+   transition: all .5s;
+}
+
+.team__info:hover img{
+    transform: scale(1.1);
+    transition: transform .3s linear;
+}
+
+.team__top img{
+    transition: all .4s;
+    border-radius: 10px;
+}
+
+/* .team__top img:hover{
+    transform: scale(1.1);
+    transition: transform .3s linear;
+} */
+.team__info:hover a{
+    color: #189a46;
+}
+
+.team__bot{
+    margin-top: 16px;
+}
+
+.team__bot p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #696969;
+}
+
+.team__bot a{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    color: black;
+    transition: all .5s;
+}
+
+/* .team__bot a:hover{
+   color: #189a46;
+} */
+
+.team__icon{
+    margin-top: 16px;
+}
+
+.team__icon a{
+    display: inline-block;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    background: #936be70d;
+    color: #189a46;
+}
+
+.team__icon span{
+    font-size: 12px;
+    line-height: 30px;
+    display: block;
+}
+
+.team__icon a:hover{
+    background: #189a46;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+
 
 
 /* COUNTING JS  */
@@ -1326,8 +1700,15 @@ p {
     margin-bottom: 10px;
 }
 
-.us__info__descr p,
-a {
+.contact .us__info__descr p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+    margin-top: 3px;
+    transition: 0.5s;
+}
+
+.contact .us__info__descr a{
     font-size: 16px;
     line-height: 24px;
     color: #777777;
