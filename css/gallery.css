@@ -385,8 +385,9 @@ p {
 }
 
 #searchBox .modal-dialog {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
 }
 
 #searchBox button.close {
@@ -410,8 +411,7 @@ p {
     font-size: 16px;
     line-height: 25px;
     color: #000;
-    height: 55px;
-    padding: 15px 20px 12px;
+    height: 45px;
     outline: none;
     border: 1px solid #d6d6d6;
     border-radius: 6px 3px 3px 6px;
@@ -424,6 +424,10 @@ p {
     align-items: inherit;
 }
 
+#searchBox .form-control{
+    width: auto;
+}
+
 #searchBox form button {
     font-size: 17px;
     line-height: 28px;
@@ -432,12 +436,13 @@ p {
     font-weight: 500;
     border: none;
     background: #189A46;
-    padding: 0 25px;
     border-radius: 0 6px 6px 0;
 }
 
 .modal-backdrop {
     background: #000000ba;
+    width: 100%;
+    height: 100%;
 }
 
 .modal-backdrop.show {
@@ -558,6 +563,17 @@ p {
 }
 
 /* Kết thúc Navigation Menu  */
+
+@media (min-width: 576px) {
+    #searchBox form input[type=search] {
+        height: 55px;
+        padding: 15px 20px 12px;
+    }
+
+    #searchBox form button {
+        padding: 0 25px;
+    }
+}
 
 @media (min-width: 992px) {
 
