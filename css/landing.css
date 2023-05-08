@@ -1575,6 +1575,63 @@ p {
 }
 
 
+
+/* FOOTER của Truyền  */
+/* Footer  */
+.footer {
+    background-color: #111;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer ul {
+    margin: 0 0;
+}
+
+.footer li,
+.footer li a {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #696969;
+    line-height: 28px;
+    transition: 0.5s all;
+}
+
+.footer li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer .footer__icons li {
+    display: inline-block;
+    margin: 0 15px 0 0;
+}
+
+.copyright p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 0;
+}
+
+.copyright p a {
+    color: #f53626;
+    opacity: 0.9;
+}
+/* <== Footer  */
+
+
+
+
+
 /* CONTACT US  */
 .contact__content>h3 {
     text-align: center;
