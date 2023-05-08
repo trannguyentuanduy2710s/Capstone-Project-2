@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContactUs</title>
+    <title>Contact us - PoochCare</title>
     <!-- bootstrap  4.6 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -23,12 +23,102 @@
 
 
     <!-- css  -->
-    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 
 
 <body>
+     <!-- Modal Search Box -->
+     <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search.."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Pooch Care</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenuTop"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenuTop">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <a href="#">Blog Posts</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <a href="#">Landing page</a>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-lg-0 mt-2">
+                        <li class="nav-item header__search">
+                            <!-- Button trigger modal -->
+                            <a href="#" data-toggle="modal" data-target="#searchBox">
+                                <span class="fa fa-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__darklight">
+                    <label for="chxdarklight">
+                        <input type="checkbox" id="chxdarklight">
+                        <div>
+                            <i class="gg-sun"></i>
+                            <i class="gg-moon"></i>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- <== Kết thúc Header  -->
+
+
+
+
+
     <!-- breadcrumb  -->
     <section class="breadcrumb">
         <div class="breadcrumb__content py-sm-5 py-4 mx-auto">
@@ -42,6 +132,10 @@
         </div>
     </section>
 
+
+
+
+    <!-- CONTACT US của Khang  -->
     <section class="contact pt-5">
         <div class="contact__content pt-lg-4">
             <h3>FIND US</h3>
@@ -117,6 +211,66 @@
 
 
 
+      <!-- Phần Footer  -->
+  <footer class="footer">
+    <div class="container py-lg-3">
+      <div class="row">
+        <div class="footer__left col-lg-6 col-md-5 mt-5">
+          <h6 class="footer__title">Contact information</h6>
+          <ul>
+            <li><strong>Address</strong> : #135 block, Barnard St. Brooklyn, London 10036, UK</li>
+            <li><strong>Phone</strong> : <a href="tel:++(12)234-11-24">+(12)234-11-24</a></li>
+            <li><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></li>
+          </ul>
+          <div class="footer__icons mt-3">
+            <ul>
+              <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" title="Dribble"><i class="fab fa-dribbble"></i></a></li>
+              <li><a href="#" title="Google"><i class="fab fa-google"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right col-lg-6 col-md-7">
+          <div class="row">
+            <div class="col-sm-4 col-6 mt-5">
+              <h6 class="footer__title">Archives</h6>
+              <ul>
+                <li><a href="#">December 2020</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-6 mt-5">
+              <h6 class="footer__title">Categories</h6>
+              <ul>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Pets care</a></li>
+                <li><a href="#">Uncategorized</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 mt-5">
+              <h6 class="footer__title">Meta</h6>
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Entries feed</a></li>
+                <li><a href="#">Comments feed</a></li>
+                <li><a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center py-lg-4 py-3 mt-5">
+      <div class="container">
+        <p>© 2023 All Rights Reserved by <a href="#">W3Layouts.</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- Kết thúc Phần Footer  -->
+
+
+
 
 
 
@@ -147,7 +301,7 @@
 
 
 
-    <!-- script function  -->
+    <!-- script function 
     <script>
         $('.counter').countUp({
             'time': 2000,
@@ -178,9 +332,9 @@
                 }
             });
         });
-    </script>
+    </script> -->
     <!-- popup video  -->
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $('.popup__video').magnificPopup({
                 type: 'inline',
@@ -200,7 +354,7 @@
 
             );
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
