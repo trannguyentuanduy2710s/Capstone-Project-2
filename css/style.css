@@ -559,9 +559,9 @@ h2 {
 }
 
 .title h2 {
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 32px;
     text-transform: capitalize;
 }
 
@@ -1425,6 +1425,13 @@ h2 {
 
 
 /* Phần Resposive */
+@media (min-width: 378px) {
+    .title h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
 @media (min-width: 441px) {
     .carousel .container {
         min-height: 480px;
@@ -1450,6 +1457,13 @@ h2 {
 
     #searchBox form button {
         padding: 0 25px;
+    }
+}
+
+@media (min-width: 601px) {
+    .title h2 {
+        font-size: 35px;
+        line-height: 40px;
     }
 }
 
@@ -1582,25 +1596,20 @@ h2 {
     .counting__item p:first-of-type {
         font-size: 50px;
         line-height: 60px;
-        /* font-weight: 600;
-        color: #fff;
-        margin-top: 30px;
-        margin-bottom: 0; */
     }
     
     .counting__item p:last-of-type {
         font-size: 20px;
-        /* line-height: 25px;
-        color: #fff;
-        margin-top: 10px;
-        opacity: 0.8;
-        font-weight: 400; */
     }
 }
 
 @media (min-width: 1081px) {
     .blog__header h2 {
         font-size: 40px;
+    }
+    .title h2 {
+        font-size: 40px;
+        line-height: 48px;
     }
 }
 
