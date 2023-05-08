@@ -64,6 +64,7 @@ h5 {
     letter-spacing: 1px;
     color: #f53626;
 }
+
 h2 {
     font-size: 40px;
     font-weight: 600;
@@ -360,15 +361,19 @@ h2 {
     font-size: 1rem;
     text-align: center;
 }
+
 #header .navbar-nav {
     padding: 20px 0;
 }
+
 #header .navbar-nav .nav-item {
     padding: 0;
 }
+
 #header .navbar-nav .dropdown {
     padding-right: 2px;
 }
+
 #header .navbar-nav .nav-link {
     text-transform: capitalize;
     padding: 6px 0;
@@ -378,12 +383,14 @@ h2 {
     position: relative;
     transition: all 0.5s ease;
 }
+
 #header .dropdown-menu {
     border-radius: 10px;
     min-width: 13rem;
     padding: 1rem 0 0.3rem;
     transform: translateX(0);
 }
+
 #header .dropdown-menu::before {
     content: '';
     width: 14px;
@@ -398,10 +405,12 @@ h2 {
     left: 50%;
     transform: translateX(-50%) rotateZ(45deg);
 }
+
 #header .dropdown-item {
     padding: 0 1.5rem 14px 1.5rem;
     text-align: center;
 }
+
 #header .dropdown-item a {
     position: relative;
     font-size: 1.2em;
@@ -409,9 +418,11 @@ h2 {
     color: #000;
     text-decoration: none;
 }
+
 #header .dropdown-item:hover {
     background-color: transparent;
 }
+
 #header .navbar-nav .dropdown-toggle:after {
     color: #999;
     content: "\f107";
@@ -423,13 +434,16 @@ h2 {
     font-size: 14px;
     font-weight: 600;
 }
+
 #header .navbar-nav .nav-link:hover,
 #header .navbar-nav .dropdown-item:hover a {
     color: #189A46;
 }
+
 #header .navbar-nav .active>a {
     color: #189A46;
 }
+
 /* Kết thúc Navigation Menu  */
 
 /* Style button */
@@ -446,6 +460,7 @@ h2 {
     color: #189A46;
     transition: 0.3s ease-in;
 }
+
 .btn-primary:hover {
     outline: none;
     box-shadow: none;
@@ -453,6 +468,7 @@ h2 {
     background-color: #fff;
     border-color: #fff;
 }
+
 .btn-primary:active {
     outline: none;
     box-shadow: none;
@@ -460,6 +476,7 @@ h2 {
     background-color: #fff !important;
     border-color: #fff;
 }
+
 .btn-outline-primary {
     padding: 10px 35px;
     font-size: 18px;
@@ -472,12 +489,14 @@ h2 {
     color: #fff;
     transition: 0.3s ease-in;
 }
+
 .btn-outline-primary:hover {
     outline: none;
     color: #189A46;
     background-color: #fff;
     border-color: #fff;
 }
+
 .btn-outline-primary:active {
     outline: none;
     box-shadow: none;
@@ -485,10 +504,12 @@ h2 {
     background-color: #fff !important;
     border-color: #fff !important;
 }
+
 .btn-outline-primary:focus {
     outline: none;
     box-shadow: none;
 }
+
 .btn-success,
 .btn-success:active,
 .btn-success:hover {
@@ -509,17 +530,20 @@ h2 {
     display: block;
     width: 100%;
 }
+
 .slider__carousel .owl-dots .active span,
 .slider__carousel .owl-dots .owl-dot:hover span {
     background-color: #189A46 !important;
     width: 30px !important;
 }
+
 /* <== Modify Owl carousel  */
 
 /* Style Title */
 .title {
     font-size: 1rem;
 }
+
 .title h5 {
     font-size: 18px;
     font-weight: 400;
@@ -528,12 +552,14 @@ h2 {
     letter-spacing: 1px;
     color: #f53626;
 }
+
 .title h2 {
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
     text-transform: capitalize;
 }
+
 /* <== Style Title  */
 
 /* Read more  */
@@ -557,6 +583,7 @@ h2 {
 .carousel .owl-item {
     position: relative;
 }
+
 .carousel .container {
     min-height: 440px;
     padding-top: 3em;
@@ -564,12 +591,14 @@ h2 {
     display: grid;
     align-items: center;
 }
+
 .carousel .carousel__bg {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
 }
+
 .carousel .carousel__bg::before {
     content: '';
     position: absolute;
@@ -578,11 +607,13 @@ h2 {
     background-color: #0c0c0c;
     opacity: 0.6;
 }
+
 .carousel .carousel__bg img {
     object-fit: cover;
     object-position: top left;
     height: 100%;
 }
+
 /* <== Carousel Background  */
 
 /* Carousel Detail  */
@@ -591,6 +622,7 @@ h2 {
     color: #fff;
     font-size: 1rem;
 }
+
 .carousel .carousel__detail h1 {
     font-size: 50px;
     line-height: 55px;
@@ -598,6 +630,7 @@ h2 {
     text-transform: capitalize;
     margin: 0;
 }
+
 .carousel .carousel__detail p {
     font-size: 15px;
     font-weight: 400;
@@ -607,6 +640,7 @@ h2 {
     color: inherit;
     margin: 0;
 }
+
 /* <== Carousel Detail */
 
 /* About */
@@ -633,13 +667,15 @@ h2 {
     background-color: #fff;
     transition: 0.5s;
 }
-.features__card>a{
+
+.features__card>a {
     transition: 0.5s;
 }
 
-.features__card:hover{
+.features__card:hover {
     background-color: rgba(147, 107, 232, 0.05);
 }
+
 .features__card>i {
     font-size: 30px;
     color: #189A46;
@@ -652,7 +688,8 @@ h2 {
     margin: 25px 0 15px 0;
     color: #000c04;
 }
-.features__card h3:hover a{
+
+.features__card h3:hover a {
     color: #189A46;
 }
 
@@ -662,9 +699,10 @@ h2 {
 
 }
 
-.features__card>a:hover{
+.features__card>a:hover {
     color: #189A46;
 }
+
 /* <== Features  */
 
 
@@ -709,9 +747,9 @@ h2 {
 }
 
 
-@media all and (max-width:992px){
-    .wcu__left img{
-        width: 100%!important;
+@media all and (max-width:992px) {
+    .wcu__left img {
+        width: 100% !important;
     }
 }
 
@@ -750,9 +788,9 @@ h2 {
     font-weight: 400;
 }
 
-@media all and (max-width:992px){
+@media all and (max-width:992px) {
     .counting__content {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -993,18 +1031,21 @@ h2 {
     background-color: #116E32;
     border: 1px solid #116E32;
 }
+
 @media all and (max-width:667px) {
     .sud__form {
         flex-direction: column;
     }
+
     .sud__form .btn {
-      width: 100%;
-      margin-top: 16px;
+        width: 100%;
+        margin-top: 16px;
     }
-    .sud__form input{
+
+    .sud__form input {
         width: 100%;
     }
-  }
+}
 
 
 
@@ -1057,6 +1098,7 @@ h2 {
     color: #f53626;
     opacity: 0.9;
 }
+
 /* <== Footer  */
 
 /* Back To Top  */
@@ -1093,9 +1135,10 @@ h2 {
 /* <== Back To Top  */
 
 /* Why Choose Us  */
-.why__right{
+.why__right {
     margin-top: 50px;
 }
+
 .why__left .title h2 {
     margin-bottom: 0;
 }
@@ -1103,10 +1146,12 @@ h2 {
 .why__left p {
     margin-bottom: 0;
 }
+
 .why__icon {
     text-align: center;
     margin-bottom: 14px;
 }
+
 .why__icon i {
     font-size: 44px;
     text-align: center;
@@ -1398,10 +1443,12 @@ h2 {
 }
 
 @media (min-width: 768px) {
+
     /* Carousel  */
     .carousel .container {
         min-height: calc(100vh - 90px);
     }
+
     /* Why choose  */
     .why__icon {
         margin-bottom: 0;
@@ -1486,7 +1533,7 @@ h2 {
     }
 
     /* Why Choose  */
-    .why__right{
+    .why__right {
         margin-top: 0;
     }
 }
@@ -1507,6 +1554,7 @@ h2 {
         font-size: 66px;
         line-height: 76px;
     }
+
     .carousel .carousel__detail p {
         font-size: 1.2em;
     }
