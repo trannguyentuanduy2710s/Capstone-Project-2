@@ -31,110 +31,110 @@
 </head>
 
 <body>
- <!-- Modal Search Box -->
- <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search.."
-                            aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+    <!-- Modal Search Box -->
+    <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search.."
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<header id="header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Pooch Care</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenuTop"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span>
-                    <i class="fa fa-bars"></i>
-                    <i class="fa fa-times"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenuTop">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
-                            Pages
-                        </a>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-item">
-                                <a href="#">Blog Posts</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a href="#">Landing page</a>
-                            </div>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Pooch Care</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenuTop"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenuTop">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item">
+                                    <a href="#">Blog Posts</a>
+                                </div>
+                                <div class="dropdown-item">
+                                    <a href="#">Landing page</a>
+                                </div>
 
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-lg-0 mt-2">
+                        <li class="nav-item header__search">
+                            <!-- Button trigger modal -->
+                            <a href="#" data-toggle="modal" data-target="#searchBox">
+                                <span class="fa fa-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__darklight">
+                    <label for="chxdarklight">
+                        <input type="checkbox" id="chxdarklight">
+                        <div>
+                            <i class="gg-sun"></i>
+                            <i class="gg-moon"></i>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mt-lg-0 mt-2">
-                    <li class="nav-item header__search">
-                        <!-- Button trigger modal -->
-                        <a href="#" data-toggle="modal" data-target="#searchBox">
-                            <span class="fa fa-search"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__darklight">
-                <label for="chxdarklight">
-                    <input type="checkbox" id="chxdarklight">
-                    <div>
-                        <i class="gg-sun"></i>
-                        <i class="gg-moon"></i>
-                    </div>
-                </label>
-            </div>
-        </nav>
-    </div>
-</header>
-<!-- <== Kết thúc Header  -->
-
-<!-- BREADCRUMB  -->
-<section class="breadcrumb">
-    <div class="breadcrumb__content py-sm-5 py-4 mx-auto">
-        <div class="container py-2">
-            <h1>Services Us</h1>
-            <ul class="breadcrumb__item mt-2">
-                <a href="#" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Service page
-            </ul>
+                    </label>
+                </div>
+            </nav>
         </div>
-    </div>
-    </div>
+    </header>
+    <!-- <== Kết thúc Header  -->
 
-</section>
+    <!-- BREADCRUMB  -->
+    <section class="breadcrumb">
+        <div class="breadcrumb__content py-sm-5 py-4 mx-auto">
+            <div class="container py-2">
+                <h1>Services Us</h1>
+                <ul class="breadcrumb__item mt-2">
+                    <a href="#" rel="nofollow">Home</a>&nbsp;&nbsp;&#187;&nbsp;&nbsp;Service page
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    </section>
 
     <!-- SERVICES -->
     <section class="services section py-5">
-        <div class="services__content container py-lg-5">
-            <div class="row mt-0">
+        <div class=" container services__content  py-lg-5">
+            <div class=" mt-0">
                 <div class="services__item row mt-0">
                     <div class="col-lg-6 pr-lg-4">
                         <a href="services.html">
@@ -144,7 +144,8 @@
                     <div class="col-lg-6 text-left pl-lg-5">
                         <h3>01</h3>
                         <h1>Dog Walking</h1>
-                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur
+                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                            consectetur
                             adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
                         <a class="read" href="services.html">Read More</a>
                     </div>
@@ -152,20 +153,20 @@
 
                 <div class="services__item row">
                     <div class="col-lg-6 text-left pr-lg-5 mt-lg-0 mt-4">
-                        <h3 >02</h3>
-                        <h1 >Dog Training</h1>
-                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur
+                        <h3>02</h3>
+                        <h1>Dog Training</h1>
+                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                            consectetur
                             adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
-                            <a class="read" href="services.html">Read More</a>
-                            
+                        <a class="read" href="services.html">Read More</a>
                     </div>
                     <div class="col-lg-6 pr-lg-4">
-                    <a href="services.html">
-                        <img class="img-fluid" src="./images/images05.jpg" alt="dog4">
-                    </a>
+                        <a href="services.html">
+                            <img class="img-fluid" src="./images/images05.jpg" alt="dog4">
+                        </a>
                     </div>
                 </div>
-                
+
                 <div class="services__item row">
                     <div class="col-lg-6 pr-lg-4">
                         <a href="services.html">
@@ -173,24 +174,26 @@
                         </a>
                     </div>
                     <div class="col-lg-6 pl-lg-5 mt-lg-0 mt-4 text-left">
-                        <h3 >03</h3>
-                        <h1 >Dog Boarding</h1>
-                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur
+                        <h3>03</h3>
+                        <h1>Dog Boarding</h1>
+                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                            consectetur
                             adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
                         <a class="read" href="services.html">Read More</a>
                     </div>
                 </div>
-                
+
                 <div class="services__item row">
                     <div class="col-lg-6 text-left pr-lg-5 two-order">
-                        <h3 >04</h3>
-                        <h1 >Dog Transportation</h1>
-                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio consectetur
+                        <h3>04</h3>
+                        <h1>Dog Transportation</h1>
+                        <p class="mt-3 mb-3">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+                            consectetur
                             adipisicing elit. Fuga, suscipit totam animi consequatur saepe blanditiis.</p>
                         <a class="read" href="services.html">Read More</a>
                     </div>
                     <div class="col-lg-6 pr-lg-4 one-order">
-                        <a  href="services.html">
+                        <a href="services.html">
                             <img class="img-fluid" src="./images/images07.jpg" alt="dog4">
                         </a>
                     </div>
@@ -200,63 +203,63 @@
     </section>
 
 
-        <!-- Phần Footer  -->
-  <footer class="footer">
-    <div class="container py-lg-3">
-      <div class="row">
-        <div class="footer__left col-lg-6 col-md-5 mt-5">
-          <h6 class="footer__title">Contact information</h6>
-          <ul>
-            <li><strong>Address</strong> : #135 block, Barnard St. Brooklyn, London 10036, UK</li>
-            <li><strong>Phone</strong> : <a href="tel:++(12)234-11-24">+(12)234-11-24</a></li>
-            <li><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></li>
-          </ul>
-          <div class="footer__icons mt-3">
-            <ul>
-              <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#" title="Dribble"><i class="fab fa-dribbble"></i></a></li>
-              <li><a href="#" title="Google"><i class="fab fa-google"></i></a></li>
-            </ul>
-          </div>
+    <!-- Phần Footer  -->
+    <footer class="footer">
+        <div class="container py-lg-3">
+            <div class="row">
+                <div class="footer__left col-lg-6 col-md-5 mt-5">
+                    <h6 class="footer__title">Contact information</h6>
+                    <ul>
+                        <li><strong>Address</strong> : #135 block, Barnard St. Brooklyn, London 10036, UK</li>
+                        <li><strong>Phone</strong> : <a href="tel:++(12)234-11-24">+(12)234-11-24</a></li>
+                        <li><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></li>
+                    </ul>
+                    <div class="footer__icons mt-3">
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Dribble"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="#" title="Google"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__right col-lg-6 col-md-7">
+                    <div class="row">
+                        <div class="col-sm-4 col-6 mt-5">
+                            <h6 class="footer__title">Archives</h6>
+                            <ul>
+                                <li><a href="#">December 2020</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-6 mt-5">
+                            <h6 class="footer__title">Categories</h6>
+                            <ul>
+                                <li><a href="#">Animals</a></li>
+                                <li><a href="#">Pets</a></li>
+                                <li><a href="#">Pets care</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 mt-5">
+                            <h6 class="footer__title">Meta</h6>
+                            <ul>
+                                <li><a href="#">Log in</a></li>
+                                <li><a href="#">Entries feed</a></li>
+                                <li><a href="#">Comments feed</a></li>
+                                <li><a href="#">WordPress.org</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer__right col-lg-6 col-md-7">
-          <div class="row">
-            <div class="col-sm-4 col-6 mt-5">
-              <h6 class="footer__title">Archives</h6>
-              <ul>
-                <li><a href="#">December 2020</a></li>
-              </ul>
+        <div class="copyright text-center py-lg-4 py-3 mt-5">
+            <div class="container">
+                <p>© 2023 All Rights Reserved by <a href="#">W3Layouts.</a></p>
             </div>
-            <div class="col-sm-4 col-6 mt-5">
-              <h6 class="footer__title">Categories</h6>
-              <ul>
-                <li><a href="#">Animals</a></li>
-                <li><a href="#">Pets</a></li>
-                <li><a href="#">Pets care</a></li>
-                <li><a href="#">Uncategorized</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-4 mt-5">
-              <h6 class="footer__title">Meta</h6>
-              <ul>
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Entries feed</a></li>
-                <li><a href="#">Comments feed</a></li>
-                <li><a href="#">WordPress.org</a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="copyright text-center py-lg-4 py-3 mt-5">
-      <div class="container">
-        <p>© 2023 All Rights Reserved by <a href="#">W3Layouts.</a></p>
-      </div>
-    </div>
-  </footer>
-  <!-- Kết thúc Phần Footer  -->
+    </footer>
+    <!-- Kết thúc Phần Footer  -->
 
 
     <!-- Optional JavaScript -->
