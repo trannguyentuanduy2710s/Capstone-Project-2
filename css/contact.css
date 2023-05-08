@@ -824,6 +824,13 @@ a.read:hover{
     float: right;
     border: 1px solid transparent;
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.form__left .form__button:hover{
+    background-color: #116E32;
+    border-color: #116E32;
+    
 }
 
 .form__right .us__info {
