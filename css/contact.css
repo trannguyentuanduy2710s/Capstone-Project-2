@@ -562,6 +562,11 @@ p {
     color: #189A46;
 }
 
+
+.navbar-toggler{
+    border-color: transparent !important;
+}
+
 /* Kết thúc Navigation Menu  */
 @media (min-width: 576px) {
     #searchBox form input[type=search] {
@@ -1000,3 +1005,13 @@ a.read:hover{
 }
 
 /* <== Back To Top  */
+
+
+
+/* fix responsive  */
+@media (max-width:992px){
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+    }
+}

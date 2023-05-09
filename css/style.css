@@ -220,6 +220,9 @@ h2 {
 #header .navbar button[aria-expanded=false] i:nth-of-type(2) {
     display: none;
 }
+.navbar-toggler{
+    border-color: transparent !important;
+}
 
 /* <== Navbar Toggle  */
 

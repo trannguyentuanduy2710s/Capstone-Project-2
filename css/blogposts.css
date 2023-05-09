@@ -418,6 +418,10 @@ img {
 #header .navbar-nav .active>a {
     color: #189A46;
 }
+.dropdown-item.active{
+    background-color: #fff;
+}
+
 /* Kết thúc Navigation Menu  */
 
 /* Style button */
@@ -873,5 +877,14 @@ img {
         width: 100%;
         padding: 0 30px 0 30px;
         margin: 0 auto 0 auto;
+    }
+}
+
+
+
+/* fix responsive  */
+@media (max-width:640px){
+    .pagepath__content h1{
+        font-size: 34px;
     }
 }
