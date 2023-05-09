@@ -418,6 +418,10 @@ img {
 #header .navbar-nav .active>a {
     color: #189A46;
 }
+.dropdown-item.active{
+    background-color: #fff;
+}
+
 /* Kết thúc Navigation Menu  */
 
 /* Style button */
