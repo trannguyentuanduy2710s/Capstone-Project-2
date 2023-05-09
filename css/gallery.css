@@ -727,11 +727,21 @@ p {
     display: block;
 }
 
-.hover14 figure{
-    position: relative;
+.gallery__cell{
+    border-radius: 10px;
     overflow: hidden;
-    margin: 0px;
 }
+
+.gallery__cell a{
+    border-radius: 10px;
+}
+
+ figure{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
 
 figure::before{
     content: "";
@@ -747,11 +757,11 @@ figure::before{
     rgba(255, 255, 255, 0.3) 100%
     );
     transform: skewX(-25deg);
-    transition: all 0.5s;
+    transition: all 0.7s;
     z-index: 2;
 }
 
-figure:hover:before{
+.gallery__cell:hover figure:before{
     left: 125%;
 }
 
@@ -861,4 +871,12 @@ figure:hover:before{
 
 .lb-nav a.lb-next{
     width: 5em;
+}
+
+
+/* fix responsive  */
+@media (max-width: 640px){
+.breadcrumb__content h1 {
+    font-size: 34px;
+}
 }
