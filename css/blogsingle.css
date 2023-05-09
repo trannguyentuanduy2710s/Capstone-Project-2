@@ -552,10 +552,12 @@ img {
     color: #fff;
     margin-bottom: 0;
     padding: 0;
+    
 }
 
 .pagepath .breadcrumb-item {
     padding: 0;
+    text-align: left;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -615,9 +617,9 @@ img {
 }
 
 .blog__header h2 {
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 600;
-    line-height: 48px;
+    line-height: 32px;
     text-transform: capitalize;
     margin-bottom: 0;
 }
@@ -652,6 +654,10 @@ img {
     font-size: 1.2em;
     line-height: 28px;
     color: #696969;
+}
+
+.blog__text a{
+    color: #189A46;
 }
 
 .blog__nav {
@@ -925,6 +931,13 @@ img {
 /* <== Kết thúc Footer  */
 
 /* Phần Resposive */
+@media (min-width: 378px) {
+    .blog__header h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
 @media (min-width: 576px) {
     #searchBox form input[type=search] {
         height: 55px;
@@ -941,6 +954,13 @@ img {
 
     .blog__control{
         padding: 0 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .blog__header h2 {
+        font-size: 35px;
+        line-height: 40px;
     }
 }
 
@@ -1019,6 +1039,13 @@ img {
 
 }
 
+@media (min-width: 1081px) {
+    .blog__header h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -1054,21 +1081,8 @@ img {
 
 /* fix responsive  */
 
-@media (max-width:1080px){
-    .blog__header h2{
-        font-size: 35px ;
-        line-height: 40px;
-    }
-}
 @media(max-width:640px){
     .pagepath__content h1{
         font-size: 34px;
-    }
-}
-
-@media(max-width:600px){
-    .blog__header h2{
-        font-size: 32px;
-        line-height: 38px;
     }
 }

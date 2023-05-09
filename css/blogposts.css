@@ -537,6 +537,7 @@ img {
 
 .pagepath .breadcrumb-item{
     padding: 0;
+    text-align: left;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -577,6 +578,7 @@ img {
 .title {
     font-size: 1rem;
 }
+
 .title h5 {
     font-size: 18px;
     font-weight: 400;
@@ -585,13 +587,15 @@ img {
     letter-spacing: 1px;
     color: #f53626;
 }
+
 .title h2 {
+    font-size: 27px;
     font-weight: 600;
-    font-size: 35px;
-    line-height: 40px;
+    line-height: 32px;
     text-transform: capitalize;
 }
-/* <== Kết thúc Style Title  */
+
+/* <== Style Title  */
 
 /* Phần Post  */
 .posts{
@@ -758,6 +762,13 @@ img {
 /* <== Kết thúc Footer  */
 
 /* Phần Resposive */
+@media (min-width: 378px) {
+    .title h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
 
 @media (min-width: 576px) {
     #searchBox form input[type=search] {
@@ -767,6 +778,13 @@ img {
 
     #searchBox form button {
         padding: 0 25px;
+    }
+}
+
+@media (min-width: 601px) {
+    .title h2 {
+        font-size: 35px;
+        line-height: 40px;
     }
 }
 
