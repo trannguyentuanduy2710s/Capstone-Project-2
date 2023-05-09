@@ -796,6 +796,28 @@ a.read:hover {
 
 
 /* Why Choose Us  */
+
+/* Style Title */
+.title {
+    font-size: 1rem;
+}
+
+.title h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+
+.title h2 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: capitalize;
+}
+
 .why__right {
     margin-top: 50px;
 }
@@ -840,6 +862,20 @@ a.read:hover {
 }
 
 /* Responsive cho why choose us của Truyền  */
+@media (min-width: 378px) {
+    .title h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media (min-width: 601px) {
+    .title h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
 @media (min-width: 737px) {
     .why__detail {
         text-align: inherit;
@@ -865,7 +901,12 @@ a.read:hover {
     }
 }
 
-
+@media (min-width: 1081px) {
+    .title h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
 /* OUR TEAM */
 .team__info a {
     text-decoration: none;
