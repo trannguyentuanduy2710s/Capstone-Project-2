@@ -1000,9 +1000,7 @@ p {
 .team__info a{
     text-decoration: none;
 }
-.container{
-    max-width: 1200px;
-}
+
 .row{
     display: flex;
     flex-wrap: wrap;
