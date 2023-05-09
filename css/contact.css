@@ -648,11 +648,51 @@ p {
     }
 }
 
+/* Style Title */
+.title {
+    font-size: 1rem;
+}
 
+.title h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+}
 
+.title h2 {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32px;
+    text-transform: capitalize;
+}
 
+/* <== Style Title  */
+@media (min-width: 379px) {
+    /* Title  */
+    .title h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
 
+@media (min-width: 601px) {
+    /* Title  */
+    .title h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
 
+@media (min-width: 1081px) {
+    /* Title  */
+    .title h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
 
 /* BREADCRUMB  */
 .breadcrumb {
