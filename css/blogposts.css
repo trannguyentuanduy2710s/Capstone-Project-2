@@ -879,3 +879,12 @@ img {
         margin: 0 auto 0 auto;
     }
 }
+
+
+
+/* fix responsive  */
+@media (max-width:640px){
+    .pagepath__content h1{
+        font-size: 34px;
+    }
+}

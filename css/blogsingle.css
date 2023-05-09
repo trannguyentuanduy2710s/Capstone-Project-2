@@ -430,6 +430,10 @@ img {
     color: #189A46;
 }
 
+.navbar-toggler{
+    border-color: transparent !important;
+}
+
 /* Kết thúc Navigation Menu  */
 
 /* Style button */
@@ -556,7 +560,7 @@ img {
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: "»";
-    padding: 0 10px;
+    padding: 0 15px;
     color: #fff;
 }
 
@@ -1043,5 +1047,28 @@ img {
         width: 100%;
         padding: 0 30px 0 30px;
         margin: 0 auto 0 auto;
+    }
+}
+
+
+
+/* fix responsive  */
+
+@media (max-width:1080px){
+    .blog__header h2{
+        font-size: 35px ;
+        line-height: 40px;
+    }
+}
+@media(max-width:640px){
+    .pagepath__content h1{
+        font-size: 34px;
+    }
+}
+
+@media(max-width:600px){
+    .blog__header h2{
+        font-size: 32px;
+        line-height: 38px;
     }
 }
