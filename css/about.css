@@ -814,6 +814,7 @@ a.read:hover {
     line-height: 2em;
     letter-spacing: 1px;
     color: #f53626;
+    margin-bottom: 6px;
 }
 
 .title h2 {
