@@ -43,8 +43,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control" type="search" placeholder="Search.."
-                                aria-label="Search">
+                            <input class="form-control" type="search" placeholder="Search.." aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
                     </div>
@@ -256,12 +255,9 @@
         </div>
     </footer>
     <!-- Kết thúc Phần Footer  -->
-
-
-
-
-
-
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -273,6 +269,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
+    <!-- Back Top Top  -->
+    <script src="./JS/backtotop/util.js"></script>
     <!-- LIGHTBOX -->
     <script src="./JS/lightbox2-2.8.2/dist/js/lightbox-plus-jquery.js"></script>
 
@@ -281,11 +279,54 @@
         lightbox.option({
             'resizeDuration': 600,
             'wrapAround': true
-        })
+        });
     </script>
+    <script>
+        // Fix Navigation On Top 
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 80) {
+                $("#header").addClass("header__fixed");
+            } else {
+                $("#header").removeClass("header__fixed");
+            }
+        });
+        // <== Fix Navigation On Top 
 
+        // Back To Top
+        (function () {
+            // Back to Top - by CodyHouse.co
+            var backTop = document.getElementsByClassName('js-cd-top')[0],
+                offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
+                offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                scrollDuration = 700,
+                scrolling = false;
 
+            if (backTop) {
+                //update back to top visibility on scrolling
+                window.addEventListener("scroll", function (event) {
+                    if (!scrolling) {
+                        scrolling = true;
+                        (!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+                    }
+                });
 
+                //smooth scroll to top
+                backTop.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    (!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
+                });
+            }
+
+            function checkBackToTop() {
+                var windowTop = window.scrollY || document.documentElement.scrollTop;
+                (windowTop > offset) ? Util.addClass(backTop, 'cd-top--is-visible') : Util.removeClass(backTop, 'cd-top--is-visible cd-top--fade-out');
+                (windowTop > offsetOpacity) && Util.addClass(backTop, 'cd-top--fade-out');
+                scrolling = false;
+            }
+        })();
+    // <== Back To Top
+    </script>
 </body>
 
 </html>
