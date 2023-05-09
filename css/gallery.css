@@ -727,13 +727,24 @@ p {
     display: block;
 }
 
-.gallery__item figure {
+.gallery__cell{
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin: 0px;
 }
 
-.gallery__item figure::after{
+.gallery__cell a{
+    border-radius: 10px;
+}
+
+ figure{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+figure::before{
     content: "";
     width: 50%;
     height: 100%;
@@ -743,14 +754,14 @@ p {
     display: block;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
     transform: skewX(-25deg);
+    transition: all 0.7s;
     z-index: 2;
     transition: all .6s;
 
 }
 
-.gallery__item figure:hover:after{
-    animation-name: shine;
-    animation-duration: 0.75s;
+.gallery__cell:hover figure:before{
+    left: 125%;
 }
 
 @keyframes shine {
@@ -864,4 +875,12 @@ p {
 
 .lb-nav a.lb-next{
     width: 5em;
+}
+
+
+/* fix responsive  */
+@media (max-width: 640px){
+.breadcrumb__content h1 {
+    font-size: 34px;
+}
 }
