@@ -562,6 +562,11 @@ p {
     color: #189A46;
 }
 
+
+.navbar-toggler{
+    border-color: transparent !important;
+}
+
 /* Kết thúc Navigation Menu  */
 
 @media (min-width: 576px) {

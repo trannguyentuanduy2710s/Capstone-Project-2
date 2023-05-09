@@ -562,6 +562,11 @@ p {
     color: #189A46;
 }
 
+
+.navbar-toggler{
+    border-color: transparent !important;
+}
+
 /* Kết thúc Navigation Menu  */
 @media (min-width: 576px) {
     #searchBox form input[type=search] {
@@ -1053,6 +1058,14 @@ a.read:hover {
 
 
 /* Fix responsive  */
+@media (max-width:1080px){
+    .services__item h1{
+        font-size: 35px !important;
+        line-height: 40px;
+    }
+}
+
+
 @media (min-width:992px) {
     .services__item {
         margin-top: 80px;
@@ -1082,4 +1095,15 @@ a.read:hover {
     }
 }
 
-@media (max-width:600px) {}
+@media (max-width:640px) {
+    .breadcrumb h1{
+        font-size: 34px;
+    }
+}
+
+@media (max-width:600px){
+    .services__item h1{
+        font-size: 32px !important;
+        line-height: 38px;
+    }
+}
