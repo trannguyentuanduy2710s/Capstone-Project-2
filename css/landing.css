@@ -1275,10 +1275,16 @@ p {
     width: 90%;
 }
 
+.pricing__items{
+    padding: 3.5em 2.5em;
+}
 
 .pricing__item{
     border-right: 0;
     /* padding: 3.5em 2.5em; */
+}
+.pricing__item .pricing__mid{
+    padding:  3.5em 2.5em; 
 }
 
 .pricing__item .active{
@@ -1371,7 +1377,7 @@ p {
     margin-top: 2em;
 }
 
-.pricing__bot button{
+.pricing__item button{
     padding: 12px 35px;
     font-size: 18px;
     line-height: 28px;
@@ -1380,9 +1386,11 @@ p {
     color: #fff;
     background-color:#189a46 ;
     transition: all .5s ease-in;
+    outline:none;
+    border: 1px solid transparent;
 }
 
-.pricing__botactive button{
+.pricing__items button{
     padding: 12px 35px;
     font-size: 18px;
     line-height: 28px;
@@ -1390,9 +1398,14 @@ p {
     border-radius: 10px;
     color: #fff;
     background-color:#189a46 ;
+    transition: all .5s ease-in;
+    outline:none;
+    border: 1px solid transparent;
 }
 
-.pricing__bot button:hover{
+
+
+.pricing__items button:hover{
     background-color: #116E32;
     border-color:  #116E32 ;
     color: #fff;
