@@ -724,13 +724,13 @@ p {
     display: block;
 }
 
-.hover14 figure{
+.gallery__item figure {
     position: relative;
     overflow: hidden;
     margin: 0px;
 }
 
-figure::before{
+.gallery__item figure::after{
     content: "";
     width: 50%;
     height: 100%;
@@ -738,20 +738,23 @@ figure::before{
     top: 0;
     left: -100%;
     display: block;
-    background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
     transform: skewX(-25deg);
-    transition: all 0.5s;
     z-index: 2;
+    transition: all .6s;
+
 }
 
-figure:hover:before{
-    left: 125%;
+.gallery__item figure:hover:after{
+    animation-name: shine;
+    animation-duration: 0.75s;
 }
 
+@keyframes shine {
+    100% {
+      left: 100%;
+    }
+  }
 
 
 
