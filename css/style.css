@@ -310,6 +310,11 @@ h2 {
     flex: 1 1 auto;
 }
 
+#searchBox form input[type=search]:active:focus,
+#searchBox form input[type=search]:focus{
+    box-shadow: none !important;
+}
+
 #searchBox .form-inline {
     align-items: inherit;
 }
@@ -465,6 +470,7 @@ h2 {
     border-color: #fff;
     border-radius: 10px;
     outline: none;
+    border: none;
     color: #189A46;
     transition: 0.3s ease-in;
 }
@@ -478,9 +484,10 @@ h2 {
 }
 
 .btn-primary:active,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:active:focus{
     outline: none;
-    box-shadow: none;
+    box-shadow: none !important;
     color: #189A46 !important;
     background-color: #fff !important;
     border-color: #fff;
@@ -506,25 +513,32 @@ h2 {
     border-color: #fff;
 }
 
-.btn-outline-primary:active {
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:active:focus {
     outline: none;
-    box-shadow: none;
+    box-shadow: none !important;
     color: #189A46 !important;
     background-color: #fff !important;
     border-color: #fff !important;
 }
 
-.btn-outline-primary:focus {
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:active:focus {
     outline: none;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .btn-success,
 .btn-success:active,
+.btn-success:active:focus,
+.btn-success:focus,
 .btn-success:hover {
     background-color: #189A46;
-    border-color: #189A46;
+    border: none;
     outline: none;
+    box-shadow: none !important;
 }
 
 /* <== Style button */
