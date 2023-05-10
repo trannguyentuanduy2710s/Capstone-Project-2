@@ -289,6 +289,11 @@ img {
     flex: 1 1 auto;
 }
 
+#searchBox form input[type=search]:active:focus,
+#searchBox form input[type=search]:focus{
+    box-shadow: none !important;
+}
+
 #searchBox .form-inline {
     align-items: inherit;
 }
@@ -483,11 +488,13 @@ img {
 }
 .btn-success,
 .btn-success:active,
+.btn-success:active:focus,
+.btn-success:focus,
 .btn-success:hover {
     background-color: #189A46;
-    border-color: #189A46;
-    outline: none;
     border: none;
+    outline: none;
+    box-shadow: none !important;
 }
 
 /* <== Style button */
