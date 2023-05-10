@@ -357,7 +357,7 @@ p {
     align-items: center;
     position: absolute;
     right: 40px;
-    /* top: 13px; */
+    top: 8px;
 }
 
 .header__darklight label {
