@@ -183,7 +183,7 @@ h2 {
 
 /* Brand  */
 #header nav .navbar-brand {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
     color: #189A46;
@@ -232,7 +232,7 @@ h2 {
     align-items: center;
     position: absolute;
     right: 40px;
-    top: 13px;
+    /* top: 13px; */
 }
 
 .header__darklight label {
@@ -1373,6 +1373,10 @@ h2 {
 }
 
 @media (min-width: 481px) {
+    /* Brand Navbar  */
+    #header nav .navbar-brand {
+        font-size: 34px;
+    }
     /* Carousel  */
     .carousel .container {
         min-height: 500px;

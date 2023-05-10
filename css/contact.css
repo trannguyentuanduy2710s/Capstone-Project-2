@@ -296,7 +296,7 @@ p {
 
 /* Brand  */
 #header nav .navbar-brand {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
     color: #189A46;
@@ -342,7 +342,7 @@ p {
     align-items: center;
     position: absolute;
     right: 40px;
-    top: 13px;
+    /* top: 13px; */
 }
 
 .header__darklight label {
@@ -568,6 +568,12 @@ p {
 }
 
 /* Kết thúc Navigation Menu  */
+@media (min-width: 481px) {
+    /* Brand Navbar  */
+    #header nav .navbar-brand {
+        font-size: 34px;
+    }
+}
 @media (min-width: 576px) {
     #searchBox form input[type=search] {
         height: 55px;
