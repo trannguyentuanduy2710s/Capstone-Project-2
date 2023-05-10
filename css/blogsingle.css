@@ -642,6 +642,11 @@ img {
 .blog__image {
     max-width: 1100px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.blog__image img{
+    width: 100%;
 }
 
 .blog__content {
@@ -701,7 +706,7 @@ img {
     color: #999;
 }
 
-.blog__comments h2 {
+.blog__comments > h2 {
     font-weight: 600;
     font-size: calc(1.325rem + 0.9vw);
 }
@@ -1069,7 +1074,7 @@ img {
     .container {
         max-width: 1140px;
     }
-    .blog__comments h2 {
+    .blog__comments > h2 {
         font-size: 2rem;
     }
 }
