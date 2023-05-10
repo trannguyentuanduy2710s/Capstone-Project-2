@@ -93,11 +93,33 @@ p {
     margin-left: auto;
 }
 
-@media (min-width: 5147px) {
+@media (min-width: 576px) {
     .container {
-        width: 100%;
-        padding: 0 30px 0 30px;
-        margin: 0 auto 0 auto;
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
     }
 }
 
@@ -109,36 +131,13 @@ p {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 5147px) {
     .container {
-        max-width: 1200px;
+        width: 100%;
+        padding: 0 30px 0 30px;
+        margin: 0 auto 0 auto;
     }
 }
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
 
 
 .container-fluid,
@@ -188,6 +187,17 @@ p {
     .container-lg,
     .container-xl {
         max-width: 1140px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1200px;
     }
 }
 
@@ -496,7 +506,7 @@ p {
     text-transform: capitalize;
     padding: 6px 0;
     font-size: 1.2em;
-    font-family: 400;
+    font-weight: 400;
     color: #000;
     position: relative;
     transition: all 0.5s ease;

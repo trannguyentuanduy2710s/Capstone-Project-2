@@ -38,6 +38,7 @@
 
 
 
+html,
 body {
     font-family: 'Jost', sans-serif;
     line-height: 1.5;
@@ -187,7 +188,7 @@ p {
     .container-md,
     .container-lg,
     .container-xl {
-        max-width: 1140px;
+        max-width: 1200px;
     }
 }
 
@@ -496,7 +497,7 @@ p {
     text-transform: capitalize;
     padding: 6px 0;
     font-size: 1.2em;
-    font-family: 400;
+    font-weight: 400;
     color: #000;
     position: relative;
     transition: all 0.5s ease;
