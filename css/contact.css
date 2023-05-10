@@ -1062,3 +1062,8 @@ a.read:hover{
         flex-direction: column;
     }
 }
+@media (max-width:640px){
+    .breadcrumb h1{
+        font-size: 34px;
+    }
+}
