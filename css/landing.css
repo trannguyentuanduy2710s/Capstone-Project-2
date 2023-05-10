@@ -191,6 +191,17 @@ p {
     }
 }
 
+@media (min-width: 1280px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1200px;
+    }
+}
+
 /* Header  */
 #header {
     position: fixed;
@@ -500,7 +511,7 @@ p {
     text-transform: capitalize;
     padding: 6px 0;
     font-size: 1.2em;
-    font-family: 400;
+    font-weight: 400;
     color: #000;
     position: relative;
     transition: all 0.5s ease;

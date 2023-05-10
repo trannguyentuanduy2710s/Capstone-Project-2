@@ -52,9 +52,9 @@ body {
     scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 h5 {
     font-size: 18px;
@@ -386,7 +386,7 @@ h2 {
     text-transform: capitalize;
     padding: 6px 0;
     font-size: 1.2em;
-    font-family: 400;
+    font-weight: 400;
     color: #000;
     position: relative;
     transition: all 0.5s ease;
@@ -1388,6 +1388,10 @@ h2 {
 }
 
 @media (min-width: 576px) {
+    /* Container  */
+    .container{
+        max-width: 540px;
+    }
     /* Search Box  */
     #searchBox form input[type=search] {
         height: 55px;
@@ -1427,6 +1431,10 @@ h2 {
 }
 
 @media (min-width: 768px) {
+    /* Container  */
+    .container{
+        max-width: 720px;
+    }
     /* Why choose  */
     .why__icon {
         margin-bottom: 0;

@@ -364,7 +364,7 @@ img {
     text-transform: capitalize;
     padding: 6px 0;
     font-size: 1.2em;
-    font-family: 400;
+    font-weight: 400;
     color: #000;
     position: relative;
     transition: all 0.5s ease;
@@ -946,6 +946,11 @@ img {
 }
 
 @media (min-width: 576px) {
+    /* Container  */
+    .container{
+        max-width: 540px;
+    }
+    /* Search Box  */
     #searchBox form input[type=search] {
         height: 55px;
         padding: 15px 20px 12px;
@@ -968,6 +973,13 @@ img {
     .blog__header h2 {
         font-size: 35px;
         line-height: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Container  */
+    .container{
+        max-width: 720px;
     }
 }
 
